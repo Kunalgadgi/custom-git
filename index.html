@@ -5,31 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook - Log In or Sign Up</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container new-container">
-        <div class="content">
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+            </div>
+            <div class="login-form">
+                <form>
+                    <div class="form-group">
+                        <label>Email or Phone</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" required>
+                        <a href="#" class="forgot-password">Forgot account?</a>
+                    </div>
+                    <button type="submit" class="login-btn">Log In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-wrapper">
             <div class="left-section">
-                <div class="logo">
-                    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+                <h2>Connect with friends and the world around you on Facebook.</h2>
+                <div class="features">
+                    <div class="feature">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png" alt="News Feed">
+                        <p>See photos and updates from friends in News Feed.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png" alt="Share">
+                        <p>Share what's new in your life on your Timeline.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/4GYAkS_c3u6.png" alt="Find More">
+                        <p>Find more of what you're looking for with Facebook Search.</p>
+                    </div>
                 </div>
-                <h2>Facebook helps you connect and share with the people in your life.</h2>
             </div>
             <div class="right-section">
-                <div class="login-form">
-                    <form>
-                        <input type="text" placeholder="Email address or phone number" required>
-                        <input type="password" placeholder="Password" required>
-                        <button type="submit" class="login-btn">Log in</button>
-                        <a href="#" class="forgot-password">Forgotten password?</a>
-                        <hr>
-                        <button type="button" class="create-account-btn">Create new account</button>
-                    </form>
-                </div>
-                <div class="create-page">
-                    <p><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
-                </div>
+                <h1>Sign Up</h1>
+                <p>It's free and always will be.</p>
+                <form class="signup-form">
+                    <div class="name-inputs">
+                        <input type="text" placeholder="First name" required>
+                        <input type="text" placeholder="Last name" required>
+                    </div>
+                    <input type="text" placeholder="Mobile number or email" required>
+                    <input type="text" placeholder="Re-enter mobile number or email" required>
+                    <input type="password" placeholder="New password" required>
+                    <div class="birthday">
+                        <label>Birthday</label>
+                        <div class="birthday-inputs">
+                            <select>
+                                <option>Month</option>
+                                <option>Jan</option>
+                                <option>Feb</option>
+                                <option>Mar</option>
+                                <!-- Add other months -->
+                            </select>
+                            <select>
+                                <option>Day</option>
+                                <!-- Add days 1-31 -->
+                            </select>
+                            <select>
+                                <option>Year</option>
+                                <!-- Add years -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="gender">
+                        <label>Gender</label>
+                        <div class="gender-options">
+                            <label><input type="radio" name="gender"> Female</label>
+                            <label><input type="radio" name="gender"> Male</label>
+                        </div>
+                    </div>
+                    <p class="terms">By clicking Sign Up, you agree to our Terms and that you have read our Data Policy, including our Cookie Use.</p>
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                </form>
             </div>
         </div>
     </div>
@@ -56,35 +114,31 @@
                     <li><a href="#">Log In</a></li>
                     <li><a href="#">Messenger</a></li>
                     <li><a href="#">Facebook Lite</a></li>
-                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Find Friends</a></li>
+                    <li><a href="#">Badges</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Pages</a></li>
                     <li><a href="#">Places</a></li>
                     <li><a href="#">Games</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Celebrities</a></li>
                     <li><a href="#">Marketplace</a></li>
-                    <li><a href="#">Meta Pay</a></li>
-                    <li><a href="#">Meta Store</a></li>
-                    <li><a href="#">Meta Quest</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Threads</a></li>
-                    <li><a href="#">Fundraisers</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Voting Information Center</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Privacy Center</a></li>
                     <li><a href="#">Groups</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Create Ad</a></li>
                     <li><a href="#">Create Page</a></li>
                     <li><a href="#">Developers</a></li>
                     <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy</a></li>
                     <li><a href="#">Cookies</a></li>
                     <li><a href="#">Ad choices</a></li>
                     <li><a href="#">Terms</a></li>
                     <li><a href="#">Help</a></li>
-                    <li><a href="#">Contact Uploading & Non-Users</a></li>
                 </ul>
             </div>
             <div class="copyright">
-                <p>Meta © 2024</p>
+                <p>Facebook © 2024</p>
             </div>
         </div>
     </footer>
